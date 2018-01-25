@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700");
+
+body  {
+    background: #38611B;
+    
+    // #9B8658;
+    padding: 3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #F6F5F4; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+ul li a {
+    font-size: 1.5em;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+
+
+<div class="container color-dark">
+  <div class="col">
+    <p>Please supply name of guest:</p>
+  </div>
+  <div class="col">
+    <p>Guest list (total: {{ guestCount }} ): <span style="font-size :.6em;">{{ toRemoveInstruct }}</span></p>
+  </div>
+</div>
+
+<div class="container color-light" [@guestAddAnimationTrigger]="guestNamesBag.length">
+  <div class="col">
+      <p class="sm">Enter the name of invited guest below.</p>
+      <form>
+        <input type="text" class="txt" name="guest" placeholer="guest name..." [(ngModel)]= "guestNameText">
+        <input type="submit" class="btn" value="Add guest to list" (click)= "addGuest()">
+      </form>
+  </div>
+  <div class="col">
+      <p class="life-container" *ngFor="let guest of guestNamesBag; let i = index" (click)= "removeItem(i)">
+        {{ guest }}
+      </p>
+  </div>
+</div>
+
